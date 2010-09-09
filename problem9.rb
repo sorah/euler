@@ -17,8 +17,9 @@ pattern_seed.each do |a|
        next if     a > b || b > c || a > c
        p [a,b,c]
        next unless (a**2+b**2) == c**2
+       puts ""
        puts "------ ANSWER WAS FOUND!!!! ------"
-       p [a,b,c]
+       puts "a = #{a}, b = #{b}, c = #{c}"
        puts "#{a}*#{b}*#{c} = #{a*b*c}"
        exit
     end

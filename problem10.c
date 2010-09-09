@@ -1,3 +1,10 @@
+/*
+ * 
+ * problem10.c
+ *
+ * ./problem10.out  0.48s user 0.01s system 87% cpu 0.551 total
+ *
+ */
 #include <stdio.h>
 
 int check(int n) {
@@ -19,14 +26,14 @@ int check(int n) {
 
 int main() {
   int i;
-  long result;
+  long int result;
   for(i = 1;i <= 2000000;i++) {
     if(i % 10000 == 0)
       printf("%d\n",i);
     if(check(i))
       result += i;
   }
-  printf("%d\n",result);
+  printf("%ld\n",result);
   return 0;
 }
 
